@@ -14,25 +14,25 @@ namespace LeEulerizer_Library_Test
         }
 
         [TestMethod]
-        public void calculate_three_shouldReturnZero()
+        public void calculate_shouldReturnZeroWhenPassedThree()
         {
             Assert.AreEqual(0, new Problem1().calculate(3));
         }
 
         [TestMethod]
-        public void calculate_four_shouldReturnThree()
+        public void calculate_shouldReturnThreeWhenPassedFour()
         {
             Assert.AreEqual(3, new Problem1().calculate(4));
         }
 
         [TestMethod]
-        public void calculate_six_shouldReturnEight()
+        public void calculate_shouldReturnEightWhenPassedSix()
         {
             Assert.AreEqual(8, new Problem1().calculate(6));
         }
 
         [TestMethod]
-        public void calculate_ten_shouldReturnTwentyThree()
+        public void calculate_shouldReturnTwentyThreeWhenPassedTen()
         {
             Assert.AreEqual(23, new Problem1().calculate(10));
         }
