@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeEulerizer-Library", "LeEu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeEulerizer-Library-Test", "LeEulerizer-Library-Test\LeEulerizer-Library-Test.csproj", "{7E1B8A08-C105-436E-B606-DF9005CC8613}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeEulerizer-Service", "LeEulerizer-Service\LeEulerizer-Service.csproj", "{98FD485F-FE6E-40E3-BD42-DC5BCD3045DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeEulerizer-Service-Test", "LeEulerizer-Service-Test\LeEulerizer-Service-Test.csproj", "{5E39D8BE-AD1F-48A3-8BAF-7D2F8E3CA266}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{7E1B8A08-C105-436E-B606-DF9005CC8613}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E1B8A08-C105-436E-B606-DF9005CC8613}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E1B8A08-C105-436E-B606-DF9005CC8613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98FD485F-FE6E-40E3-BD42-DC5BCD3045DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98FD485F-FE6E-40E3-BD42-DC5BCD3045DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98FD485F-FE6E-40E3-BD42-DC5BCD3045DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98FD485F-FE6E-40E3-BD42-DC5BCD3045DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E39D8BE-AD1F-48A3-8BAF-7D2F8E3CA266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E39D8BE-AD1F-48A3-8BAF-7D2F8E3CA266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E39D8BE-AD1F-48A3-8BAF-7D2F8E3CA266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E39D8BE-AD1F-48A3-8BAF-7D2F8E3CA266}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
