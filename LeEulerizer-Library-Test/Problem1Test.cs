@@ -30,5 +30,11 @@ namespace LeEulerizer_Library_Test
         {
             Assert.AreEqual(8, new Problem1(6).calculate());
         }
+
+        [TestMethod]
+        public void calculate_ten_shouldReturnTwentyThree()
+        {
+            Assert.AreEqual(23, new Problem1(10).calculate());
+        }
     }
 }
