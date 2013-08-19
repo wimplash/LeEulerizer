@@ -8,16 +8,18 @@ namespace LeEulerizer_Library
 {
     public class Problem1
     {
-        private long upperBound;
+        private int upperBound;
 
-        public Problem1(long upperBound)
+        public Problem1(int upperBound)
         {
             this.upperBound = upperBound;
         }
 
         public long calculate()
         {
-            return 0;
+            return Enumerable.Range(0, upperBound)
+                .SkipWhile(value => (value % 3 != 0 || value % 5 != 0))
+                .Sum();
         }
     }
 }

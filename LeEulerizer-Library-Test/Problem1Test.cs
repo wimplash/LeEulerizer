@@ -18,5 +18,11 @@ namespace LeEulerizer_Library_Test
         {
             Assert.AreEqual(new Problem1(1).calculate(), 0);
         }
+
+        [TestMethod]
+        public void calculate_three_shouldReturnThree()
+        {
+            Assert.AreEqual(new Problem1(3).calculate(), 3);
+        }
     }
 }
