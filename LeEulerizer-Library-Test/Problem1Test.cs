@@ -36,5 +36,12 @@ namespace LeEulerizer_Library_Test
         {
             Assert.AreEqual(23, new Problem1(10).calculate());
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void constructor_shouldThrowExceptionWhenPassedZero()
+        {
+            new Problem1(0);
+        }
     }
 }

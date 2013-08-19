@@ -12,6 +12,11 @@ namespace LeEulerizer_Library
 
         public Problem1(int upperBound)
         {
+            if (upperBound == 0)
+            {
+                throw new ArgumentOutOfRangeException("upperBound", upperBound,
+                    "the upperBound parameter must be greater than zero");
+            }
             this.upperBound = upperBound;
         }
 
