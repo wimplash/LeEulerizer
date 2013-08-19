@@ -14,48 +14,48 @@ namespace LeEulerizer_Library_Test
         }
 
         [TestMethod]
-        public void calculate_shouldReturnZeroWhenPassedThree()
+        public void Calculate_shouldReturnZeroWhenPassedThree()
         {
-            Assert.AreEqual(0, new Problem1().calculate(3));
+            Assert.AreEqual(0, new Problem1().Calculate(3));
         }
 
         [TestMethod]
-        public void calculate_shouldReturnThreeWhenPassedFour()
+        public void Calculate_shouldReturnThreeWhenPassedFour()
         {
-            Assert.AreEqual(3, new Problem1().calculate(4));
+            Assert.AreEqual(3, new Problem1().Calculate(4));
         }
 
         [TestMethod]
-        public void calculate_shouldReturnEightWhenPassedSix()
+        public void Calculate_shouldReturnEightWhenPassedSix()
         {
-            Assert.AreEqual(8, new Problem1().calculate(6));
+            Assert.AreEqual(8, new Problem1().Calculate(6));
         }
 
         [TestMethod]
-        public void calculate_shouldReturnTwentyThreeWhenPassedTen()
+        public void Calculate_shouldReturnTwentyThreeWhenPassedTen()
         {
-            Assert.AreEqual(23, new Problem1().calculate(10));
-        }
-
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentOutOfRangeException))]
-        public void calculate_shouldThrowExceptionWhenPassedZero()
-        {
-            new Problem1().calculate(0);
+            Assert.AreEqual(23, new Problem1().Calculate(10));
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
-        public void calculate_shouldThrowExceptionWhenPassedNegativeOne()
+        public void Calculate_shouldThrowExceptionWhenPassedZero()
         {
-            new Problem1().calculate(-1);
+            new Problem1().Calculate(0);
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
-        public void calculate_shouldThrowExceptionWhenPassedOne()
+        public void Calculate_shouldThrowExceptionWhenPassedNegativeOne()
         {
-            new Problem1().calculate(1);
+            new Problem1().Calculate(-1);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void Calculate_shouldThrowExceptionWhenPassedOne()
+        {
+            new Problem1().Calculate(1);
         }
     }
 }

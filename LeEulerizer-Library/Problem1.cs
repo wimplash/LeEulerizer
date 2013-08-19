@@ -8,7 +8,7 @@ namespace LeEulerizer_Library
 {
     public class Problem1
     {
-        public long calculate(int upperBound)
+        public long Calculate(int upperBound)
         {
             if (upperBound <= 1)
             {
