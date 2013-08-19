@@ -10,10 +10,10 @@ namespace LeEulerizer_Library
     {
         public long calculate(int upperBound)
         {
-            if (upperBound == 0)
+            if (upperBound <= 1)
             {
                 throw new ArgumentOutOfRangeException("upperBound", upperBound,
-                    "the upperBound parameter must be greater than zero");
+                    "the upperBound parameter must be greater than one");
             }
             return Enumerable.Range(1, upperBound - 1)
                 .Where(value => (value % 3 == 0 || value % 5 == 0))

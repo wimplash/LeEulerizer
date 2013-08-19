@@ -43,5 +43,19 @@ namespace LeEulerizer_Library_Test
         {
             new Problem1().calculate(0);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void calculate_shouldThrowExceptionWhenPassedNegativeOne()
+        {
+            new Problem1().calculate(-1);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void calculate_shouldThrowExceptionWhenPassedOne()
+        {
+            new Problem1().calculate(1);
+        }
     }
 }
