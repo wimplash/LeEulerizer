@@ -7,55 +7,57 @@ namespace LeEulerizer_Library_Test
     [TestClass]
     public class Problem1Test
     {
-        [TestMethod]
-        public void Problem1_canBeConstructed()
+        private Problem1 cut;
+
+        [TestInitialize]
+        public void CreateClassUnderTest()
         {
-            Assert.IsNotNull(new Problem1());
+            cut = new Problem1();
         }
 
         [TestMethod]
         public void Calculate_shouldReturnZeroWhenPassedThree()
         {
-            Assert.AreEqual(0, new Problem1().Calculate(3));
+            Assert.AreEqual(0, cut.Calculate(3));
         }
 
         [TestMethod]
         public void Calculate_shouldReturnThreeWhenPassedFour()
         {
-            Assert.AreEqual(3, new Problem1().Calculate(4));
+            Assert.AreEqual(3, cut.Calculate(4));
         }
 
         [TestMethod]
         public void Calculate_shouldReturnEightWhenPassedSix()
         {
-            Assert.AreEqual(8, new Problem1().Calculate(6));
+            Assert.AreEqual(8, cut.Calculate(6));
         }
 
         [TestMethod]
         public void Calculate_shouldReturnTwentyThreeWhenPassedTen()
         {
-            Assert.AreEqual(23, new Problem1().Calculate(10));
+            Assert.AreEqual(23, cut.Calculate(10));
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void Calculate_shouldThrowExceptionWhenPassedZero()
         {
-            new Problem1().Calculate(0);
+            cut.Calculate(0);
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void Calculate_shouldThrowExceptionWhenPassedNegativeOne()
         {
-            new Problem1().Calculate(-1);
+            cut.Calculate(-1);
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void Calculate_shouldThrowExceptionWhenPassedOne()
         {
-            new Problem1().Calculate(1);
+            cut.Calculate(1);
         }
     }
 }
