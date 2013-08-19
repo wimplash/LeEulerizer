@@ -17,7 +17,7 @@ namespace LeEulerizer_Library
 
         public long calculate()
         {
-            return Enumerable.Range(1, upperBound)
+            return Enumerable.Range(1, upperBound - 1)
                 .Where(value => (value % 3 == 0 || value % 5 == 0))
                 .Sum();
         }

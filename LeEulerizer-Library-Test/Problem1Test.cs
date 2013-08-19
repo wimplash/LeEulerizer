@@ -14,21 +14,21 @@ namespace LeEulerizer_Library_Test
         }
 
         [TestMethod]
-        public void calculate_one_shouldReturnZero()
+        public void calculate_three_shouldReturnZero()
         {
-            Assert.AreEqual(0, new Problem1(1).calculate());
+            Assert.AreEqual(0, new Problem1(3).calculate());
         }
 
         [TestMethod]
-        public void calculate_three_shouldReturnThree()
+        public void calculate_four_shouldReturnThree()
         {
-            Assert.AreEqual(3, new Problem1(3).calculate());
+            Assert.AreEqual(3, new Problem1(4).calculate());
         }
 
         [TestMethod]
-        public void calculate_five_shouldReturnEight()
+        public void calculate_six_shouldReturnEight()
         {
-            Assert.AreEqual(8, new Problem1(5).calculate());
+            Assert.AreEqual(8, new Problem1(6).calculate());
         }
     }
 }
