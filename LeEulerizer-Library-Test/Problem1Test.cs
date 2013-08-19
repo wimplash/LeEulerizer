@@ -10,7 +10,13 @@ namespace LeEulerizer_Library_Test
         [TestMethod]
         public void Problem1_canBeConstructed()
         {
-            Assert.IsNotNull(new Problem1());
+            Assert.IsNotNull(new Problem1(10));
+        }
+
+        [TestMethod]
+        public void calculate_one_shouldReturnZero()
+        {
+            Assert.AreEqual(new Problem1(1).calculate(), 0);
         }
     }
 }

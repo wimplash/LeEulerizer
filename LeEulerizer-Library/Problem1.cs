@@ -8,5 +8,16 @@ namespace LeEulerizer_Library
 {
     public class Problem1
     {
+        private long upperBound;
+
+        public Problem1(long upperBound)
+        {
+            this.upperBound = upperBound;
+        }
+
+        public long calculate()
+        {
+            return 0;
+        }
     }
 }
