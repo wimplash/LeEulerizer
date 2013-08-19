@@ -10,38 +10,38 @@ namespace LeEulerizer_Library_Test
         [TestMethod]
         public void Problem1_canBeConstructed()
         {
-            Assert.IsNotNull(new Problem1(10));
+            Assert.IsNotNull(new Problem1());
         }
 
         [TestMethod]
         public void calculate_three_shouldReturnZero()
         {
-            Assert.AreEqual(0, new Problem1(3).calculate());
+            Assert.AreEqual(0, new Problem1().calculate(3));
         }
 
         [TestMethod]
         public void calculate_four_shouldReturnThree()
         {
-            Assert.AreEqual(3, new Problem1(4).calculate());
+            Assert.AreEqual(3, new Problem1().calculate(4));
         }
 
         [TestMethod]
         public void calculate_six_shouldReturnEight()
         {
-            Assert.AreEqual(8, new Problem1(6).calculate());
+            Assert.AreEqual(8, new Problem1().calculate(6));
         }
 
         [TestMethod]
         public void calculate_ten_shouldReturnTwentyThree()
         {
-            Assert.AreEqual(23, new Problem1(10).calculate());
+            Assert.AreEqual(23, new Problem1().calculate(10));
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
-        public void constructor_shouldThrowExceptionWhenPassedZero()
+        public void calculate_shouldThrowExceptionWhenPassedZero()
         {
-            new Problem1(0);
+            new Problem1().calculate(0);
         }
     }
 }
