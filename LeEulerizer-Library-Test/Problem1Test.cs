@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using LeEulerizer_Library;
 
@@ -7,6 +8,8 @@ namespace LeEulerizer_Library_Test
     [TestClass]
     public class Problem1Test
     {
+        private static TraceSource _source = new TraceSource("test-results");
+
         private Problem1 cut;
 
         [TestInitialize]
@@ -58,6 +61,12 @@ namespace LeEulerizer_Library_Test
         public void Calculate_shouldThrowExceptionWhenPassedOne()
         {
             cut.Calculate(1);
+        }
+
+        [TestMethod]
+        public void FindSolution()
+        {
+            _source.TraceEvent(TraceEventType.Information, 0, "found result {0}", cut.Calculate(1000));
         }
     }
 }
